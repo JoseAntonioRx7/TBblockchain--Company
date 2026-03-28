@@ -1,0 +1,55 @@
+/* assets/css/components/how-it-works.css */
+
+.process-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.process-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 30px;
+    background: rgba(20, 20, 26, 0.4);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.process-item:hover {
+    border-color: var(--accent-purple);
+    background: rgba(110, 86, 207, 0.05);
+}
+
+.process-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--accent-purple); /* Efeito de contorno */
+    line-height: 1;
+    opacity: 0.6;
+}
+
+.process-info h3 {
+    color: var(--text-main);
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.process-info p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+    .process-number {
+        font-size: 2.5rem;
+    }
+}

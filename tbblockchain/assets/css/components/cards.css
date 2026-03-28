@@ -1,0 +1,110 @@
+.section-padding {
+    padding: 100px 0;
+}
+
+.bg-alt {
+    background-color: var(--bg-card); /* Um tom levemente diferente para separar as seções */
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+z
+.section-subtitle {
+    color: var(--accent-purple);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--text-main);
+    margin: 15px 0;
+}
+
+.section-description {
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Grid de Cards */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card-problem {
+    background: var(--bg-dark);
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-problem:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-purple);
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card-problem h3 {
+    color: var(--text-main);
+    margin-bottom: 15px;
+}
+
+.card-problem p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Layout Solução */
+.solution-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.solution-content { flex: 1; }
+.solution-image { flex: 1; }
+
+.solution-list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.solution-list li {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.solution-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-purple);
+    font-weight: bold;
+}
+
+.img-fluid {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .solution-wrapper { flex-direction: column; text-align: center; }
+    .solution-list li { text-align: left; }
+}

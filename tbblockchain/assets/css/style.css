@@ -1,0 +1,100 @@
+/* ==========================================================================
+   TBBLOCKCHAIN - GLOBAL STYLE SHEET
+   ========================================================================== */
+
+/* 1. VARIÁVEIS E BASE (Sempre no topo) */
+@import url('variables.css');
+
+/* 2. LAYOUT (Componentes fixos) */
+@import url('components/navbar.css');
+/* @import url('components/footer.css'); -- Crie este arquivo em assets/css/components/ */
+
+/* 3. SEÇÕES (Componentes de conteúdo) */
+@import url('components/hero.css');
+@import url('components/cards.css');       /* Usado em Problem e Solution */
+@import url('components/how-it-works.css');
+
+/* Seções futuras (Já importadas para evitar erros de renderização) */
+@import url('components/about.css');
+@import url('components/not-doing.css');
+@import url('components/partners.css');
+@import url('components/roadmap.css');
+
+/* 4. ESTILOS GLOBAIS E RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Navegação suave ao clicar no menu */
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Utilitários de Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+/* Utilitário para subtítulos e títulos de seção (Padronização) */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-subtitle {
+    color: var(--accent-purple);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--text-main);
+    margin: 15px 0;
+}
+
+.section-description {
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Links Globais */
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Scrollbar Customizada (Estilo Web3) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-purple);
+}

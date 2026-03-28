@@ -1,0 +1,17 @@
+:root {
+  /* Cores de Fundo (Backgrounds) */
+  --bg-dark: #0A0A0E;      /* Preto profundo para o fundo principal */
+  --bg-card: #14141A;      /* Cinza muito escuro para destacar seções/cards */
+  --bg-card-hover: #1A1A24;/* Cinza sutilmente mais claro para interações */
+
+  /* Cores de Texto */
+  --text-main: #FFFFFF;    /* Branco puro para títulos e textos principais */
+  --text-muted: #A0A0AB;   /* Cinza claro para subtítulos e descrições longas */
+
+  /* Cores de Destaque (Acentos Web3) */
+  --accent-purple: #6E56CF; /* Roxo principal da marca */
+  --accent-blue: #3B82F6;   /* Azul escuro/médio para gradientes com o roxo */
+  
+  /* Estrutura */
+  --border-color: #272730;  /* Bordas sutis para separar os componentes */
+}
