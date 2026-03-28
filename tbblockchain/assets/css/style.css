@@ -1,5 +1,5 @@
 /* ==========================================================================
-   TBBLOCKCHAIN - GLOBAL STYLE SHEET
+   TBblockchain - GLOBAL STYLE SHEET
    ========================================================================== */
 
 /* 1. VARIÁVEIS E BASE (Sempre no topo) */
@@ -7,7 +7,7 @@
 
 /* 2. LAYOUT (Componentes fixos) */
 @import url('components/navbar.css');
-/* @import url('components/footer.css'); -- Crie este arquivo em assets/css/components/ */
+@import url('components/footer.css');
 
 /* 3. SEÇÕES (Componentes de conteúdo) */
 @import url('components/hero.css');
@@ -19,6 +19,7 @@
 @import url('components/not-doing.css');
 @import url('components/partners.css');
 @import url('components/roadmap.css');
+@import url('components/contact.css');
 
 /* 4. ESTILOS GLOBAIS E RESET */
 * {

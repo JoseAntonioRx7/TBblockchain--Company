@@ -1,0 +1,86 @@
+/* assets/css/components/about.css */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-content {
+    flex: 1.2;
+}
+
+.about-text {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.about-highlights {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.about-highlights li {
+    color: var(--text-main);
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    font-weight: 500;
+}
+
+.about-highlights li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-purple);
+    font-weight: bold;
+}
+
+/* Painel visual de Missão e Visão à direita */
+.about-visual {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-card-glass {
+    background: rgba(110, 86, 207, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(110, 86, 207, 0.2);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-card-glass h3 {
+    color: var(--accent-purple);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.about-card-glass p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.about-card-glass.outline {
+    background: transparent;
+    border-color: var(--border-color);
+}
+
+.about-card-glass.outline h3 {
+    color: var(--text-main);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+    }
+    .about-visual {
+        width: 100%;
+    }
+}

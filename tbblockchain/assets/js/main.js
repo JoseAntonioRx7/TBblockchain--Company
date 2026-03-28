@@ -28,8 +28,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadHTML('not-doing-container', 'components/sections/not-doing.html');
     await loadHTML('roadmap-container', 'components/sections/roadmap.html');
     await loadHTML('partners-container', 'components/sections/partners.html');
+    await loadHTML('contact-container', 'components/sections/contact.html');
 
-    console.log("TBBlockchain UI: Todos os módulos carregados com sucesso.");
+    console.log("TBblockchain UI: Todos os módulos carregados com sucesso.");
 
     // TODO: Chamar funções do ui.js aqui (ex: animações, setup do particles.js, etc.)
 });

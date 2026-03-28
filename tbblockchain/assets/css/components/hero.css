@@ -41,8 +41,10 @@
 
 .gradient-text {
     background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; /* Para compatibilidade com WebKit */
+    background-clip: text;         /* Padrão oficial exigido pelo VS Code */
     -webkit-text-fill-color: transparent;
+    color: transparent;            /* Fallback padrão */
 }
 
 .hero-subtitle {
