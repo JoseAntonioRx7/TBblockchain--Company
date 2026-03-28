@@ -1,8 +1,8 @@
-# TBBlockchain
+# TBblockchain
 
 ## Sobre a empresa
 
-A TBBlockchain é uma empresa privada focada na aplicação de tecnologia blockchain para a transformação digital de instituições de ensino.
+A TBblockchain é uma empresa privada focada na aplicação de tecnologia blockchain para a transformação digital de instituições de ensino.
 
 Desenvolvemos soluções que garantem segurança, rastreabilidade e validação confiável de dados acadêmicos, reduzindo fraudes e aumentando a confiança institucional.
 
@@ -36,7 +36,7 @@ Nosso processo é estruturado em quatro etapas:
 
 Sistema para emissão, armazenamento e verificação de certificados e diplomas utilizando tecnologia blockchain, garantindo autenticidade e segurança dos dados.
 
-> Esta é a primeira de várias soluções que compõem o ecossistema da TBBlockchain.
+> Esta é a primeira de várias soluções que compõem o ecossistema da TBblockchain.
 
 ---
 
@@ -48,7 +48,7 @@ Construir um ecossistema de soluções blockchain voltado para o setor educacion
 
 ## Diferencial
 
-A TBBlockchain não desenvolve apenas sistemas.
+A TBblockchain não desenvolve apenas sistemas.
 
 Nós analisamos problemas reais e aplicamos tecnologia de forma estratégica para gerar impacto concreto.
 
@@ -57,7 +57,7 @@ Nós analisamos problemas reais e aplicamos tecnologia de forma estratégica par
 
 ## Objetivo deste repositório
 
-Este repositório representa a landing page institucional da TBBlockchain, utilizada para apresentar:
+Este repositório representa a landing page institucional da TBblockchain, utilizada para apresentar:
 
 - A empresa
 - O modelo de atuação
