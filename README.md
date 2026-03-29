@@ -8,7 +8,7 @@ Desenvolvemos soluções que garantem segurança, rastreabilidade e validação 
 
 Nosso objetivo é resolver problemas reais utilizando tecnologia de forma estratégica, criando sistemas escaláveis e preparados para o futuro.
 
----
+-----
 
 ## O que fazemos
 
@@ -17,7 +17,7 @@ Nosso objetivo é resolver problemas reais utilizando tecnologia de forma estrat
 - Transformação digital de processos acadêmicos
 - Validação e integridade de dados institucionais
 
----
+-----
 
 ## Como atuamos
 
@@ -28,7 +28,7 @@ Nosso processo é estruturado em quatro etapas:
 3. Desenvolvimento de sistemas seguros e escaláveis  
 4. Validação prática da solução  
 
----
+-----
 
 ## Soluções desenvolvidas
 
@@ -38,13 +38,13 @@ Sistema para emissão, armazenamento e verificação de certificados e diplomas 
 
 > Esta é a primeira de várias soluções que compõem o ecossistema da TBblockchain.
 
----
+-----
 
 ## Visão
 
 Construir um ecossistema de soluções blockchain voltado para o setor educacional, tornando instituições mais seguras, eficientes e confiáveis.
 
----
+-----
 
 ## Diferencial
 
@@ -53,7 +53,7 @@ A TBblockchain não desenvolve apenas sistemas.
 Nós analisamos problemas reais e aplicamos tecnologia de forma estratégica para gerar impacto concreto.
 
 
----
+-----
 
 ## Objetivo deste repositório
 
@@ -64,7 +64,7 @@ Este repositório representa a landing page institucional da TBblockchain, utili
 - As soluções desenvolvidas
 - A visão estratégica
 
----
+-----
 
 ## Próximos passos
 
@@ -72,7 +72,7 @@ Este repositório representa a landing page institucional da TBblockchain, utili
 - Evolução da plataforma blockchain
 - Consolidação como referência em soluções educacionais seguras
 
----
+-----
 
 ## Contato
 
