@@ -1,0 +1,43 @@
+/* Centraliza o wrapper principal e limita a largura para melhor leitura */
+.solution-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centraliza títulos e parágrafos */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.solution-content {
+    width: 100%;
+}
+
+/* Garante que a descrição não fique larga demais */
+.section-description {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+}
+
+/* Centraliza a lista, mas mantém os itens alinhados à esquerda internamente */
+.solution-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto 0;
+    display: inline-block; /* Permite que o text-align: center do pai funcione */
+    text-align: left; /* Mantém o texto dos itens bonitos */
+}
+
+.solution-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Se você estiver usando ícones de check como na imagem */
+.solution-list li::before {
+    content: '✓';
+    color: var(--accent-purple);
+    font-weight: bold;
+}

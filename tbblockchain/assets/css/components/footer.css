@@ -112,3 +112,25 @@
     .footer-brand p { margin: 0 auto 25px; }
     .mini-form { justify-content: center; }
 }
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha tudo à esquerda */
+    gap: 10px;
+}
+
+.footer-logo-img {
+    height: 120px; /* Tamanho levemente maior que na Navbar */
+    width: auto;
+    margin-bottom: 5px;
+    
+    /* Inverte a cor de preto para branco/cinza claro */
+    filter: invert(1) brightness(0.9); 
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo-img:hover {
+    opacity: 1; /* Ganha destaque ao passar o mouse */
+}

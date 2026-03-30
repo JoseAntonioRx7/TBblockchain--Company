@@ -124,3 +124,47 @@
     .hero-btns { justify-content: center; }
     .hero-subtitle { margin-inline: auto; }
 }
+
+/* assets/css/components/hero.css */
+
+.hero-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide o hero em duas colunas */
+    gap: 50px;
+    align-items: center;
+}
+
+/* Centraliza a imagem na coluna da direita */
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização e Animação da Imagem Existing class */
+.floating-img {
+    width: 400px; /* Tamanho da logo flutuante no hero */
+    height: auto;
+    
+    /* 1. Visibilidade: Inverte a cor da logo preta para branco/cinza claro */
+    filter: invert(1) brightness(1.2); 
+    
+    /* 2. Animação: Flutuação suave */
+    animation: floatAnimation 6s ease-in-out infinite;
+}
+
+/* Definição da Animação de Flutuação */
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Sobe 20px no meio da animação */
+    }
+}
