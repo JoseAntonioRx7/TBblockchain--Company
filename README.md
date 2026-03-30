@@ -2,91 +2,36 @@
 
 ## Sobre a empresa
 
-A TBblockchain é uma empresa privada focada na aplicação de tecnologia blockchain para a transformação digital de instituições de ensino.
+A TBblockchain é uma empresa de tecnologia e infraestrutura focada em resolver desafios operacionais e de segurança no setor educacional. 
 
-Desenvolvemos soluções que garantem segurança, rastreabilidade e validação confiável de dados acadêmicos, reduzindo fraudes e aumentando a confiança institucional.
+Nós não somos focados em um único produto, mas sim na construção de um ecossistema de soluções baseadas em tecnologia descentralizada. Nosso objetivo é analisar problemas reais das instituições de ensino e desenvolver arquiteturas seguras, escaláveis e à prova de fraudes.
 
-Nosso objetivo é resolver problemas reais utilizando tecnologia de forma estratégica, criando sistemas escaláveis e preparados para o futuro.
+---
 
------
+## Nosso Ponto de Partida: Certificação Acadêmica
 
-## O que fazemos
+Para validar nossa infraestrutura de rede e resolver uma das maiores dores do mercado atual, desenvolvemos nossa **primeira solução**: um sistema completo para emissão, armazenamento e verificação de certificados e diplomas utilizando blockchain.
 
-- Desenvolvimento de soluções baseadas em blockchain
-- Estruturação de sistemas seguros e auditáveis
-- Transformação digital de processos acadêmicos
-- Validação e integridade de dados institucionais
+**Importante:** Esta solução de certificação é apenas o nosso caso de uso inicial. Ela comprova a viabilidade e a segurança da nossa arquitetura, servindo como base para os próximos desenvolvimentos.
 
------
+---
 
-## Como atuamos
+## O que estamos construindo
 
-Nosso processo é estruturado em quatro etapas:
+A TBblockchain está em desenvolvimento contínuo. Nosso roadmap inclui a criação de diversas outras soluções para o ambiente acadêmico, sempre mantendo os seguintes pilares:
 
-1. Identificação de problemas reais  
-2. Modelagem da solução com blockchain  
-3. Desenvolvimento de sistemas seguros e escaláveis  
-4. Validação prática da solução  
+* Desenvolvimento de infraestrutura baseada em blockchain.
+* Estruturação de sistemas auditáveis para dados sensíveis.
+* Transformação digital de processos burocráticos institucionais.
 
------
-
-## Soluções desenvolvidas
-
-### Certificação Acadêmica
-
-Sistema para emissão, armazenamento e verificação de certificados e diplomas utilizando tecnologia blockchain, garantindo autenticidade e segurança dos dados.
-
-> Esta é a primeira de várias soluções que compõem o ecossistema da TBblockchain.
-
------
+---
 
 ## Visão
 
-Construir um ecossistema de soluções blockchain voltado para o setor educacional, tornando instituições mais seguras, eficientes e confiáveis.
+Construir o principal ecossistema de soluções blockchain voltado para a modernização do setor educacional, tornando as instituições mais seguras, eficientes e preparadas para o futuro da web3.
 
------
-
-## Diferencial
-
-A TBblockchain não desenvolve apenas sistemas.
-
-Nós analisamos problemas reais e aplicamos tecnologia de forma estratégica para gerar impacto concreto.
-
-
------
-
-## Objetivo deste repositório
-
-Este repositório representa a landing page institucional da TBblockchain, utilizada para apresentar:
-
-- A empresa
-- O modelo de atuação
-- As soluções desenvolvidas
-- A visão estratégica
-
------
-
-## Próximos passos
-
-- Expansão do portfólio de soluções
-- Evolução da plataforma blockchain
-- Consolidação como referência em soluções educacionais seguras
-
------
+---
 
 ## Contato
 
 Em breve.
-
-
-[ HERO → o que a empresa faz ]
-[ SOBRE → quem somos ]
-[ COMO FUNCIONAMOS → abordagem ]
-[ SOLUÇÕES → o que já criamos ]
-[ VISÃO / ROADMAP → pra onde vamos ]
-
-
-
-
-
-
