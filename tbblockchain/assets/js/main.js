@@ -1,4 +1,4 @@
-// Função utilitária para buscar e injetar o HTML
+// main.js
 async function loadHTML(elementId, filePath) {
     try {
         const response = await fetch(filePath);
@@ -6,20 +6,23 @@ async function loadHTML(elementId, filePath) {
             throw new Error(`Erro ao carregar o arquivo: ${filePath}`);
         }
         const htmlData = await response.text();
-        document.getElementById(elementId).innerHTML = htmlData;
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.innerHTML = htmlData;
+        }
     } catch (error) {
         console.error("Erro na injeção de componente:", error);
     }
 }
 
-// Inicializa o site assim que o DOM do index.html estiver pronto
 document.addEventListener('DOMContentLoaded', async () => {
     
-    // 1. Carrega o Layout (Navbar e Footer)
+    // 1. Carrega o Layout (Caminhos baseados na sua estrutura real)
     await loadHTML('navbar-container', 'components/layout/navbar.html');
     await loadHTML('footer-container', 'components/layout/footer.html');
 
     // 2. Carrega as Seções da Landing Page
+    // Certifique-se de que a pasta no VS Code se chama 'components' (no plural)
     await loadHTML('hero-container', 'components/sections/hero.html');
     await loadHTML('about-container', 'components/sections/about.html');
     await loadHTML('problem-container', 'components/sections/problem.html');
@@ -31,6 +34,4 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadHTML('contact-container', 'components/sections/contact.html');
 
     console.log("TBblockchain UI: Todos os módulos carregados com sucesso.");
-
-    // TODO: Chamar funções do ui.js aqui (ex: animações, setup do particles.js, etc.)
 });

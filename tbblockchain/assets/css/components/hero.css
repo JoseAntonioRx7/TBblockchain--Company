@@ -8,11 +8,19 @@
 
 .hero-container {
     display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente se houver altura definida */
+    text-align: center;      /* Garante que o texto interno também fique centralizado */
+    max-width: 900px;        /* Limita a largura para o texto não ficar esticado demais */
+    margin: 0 auto;          /* Centraliza o bloco todo na página */
+    padding: 100px 20px;     /* Espaçamento interno */
+}
+
+.hero-container p {
+    max-width: 600px;        /* Deixa o parágrafo com uma largura agradável para leitura */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-content {
@@ -55,10 +63,15 @@
     max-width: 600px;
 }
 
-/* Botões */
-.hero-btns {
+/* Unifique as classes para evitar conflitos */ /* Botoes do Hero */
+.hero-btns, 
+.hero-buttons {
     display: flex;
-    gap: 16px;
+    justify-content: center; /* Centraliza horizontalmente no computador */
+    align-items: center;     /* Alinha verticalmente se necessário */
+    gap: 16px;               /* Espaçamento entre os botões */
+    margin-top: 30px;
+    width: 100%;             /* Garante que o container ocupe a largura total */
 }
 
 .btn {
@@ -68,29 +81,63 @@
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
+    display: inline-flex;    /* Ajuda na centralização do texto interno */
+    align-items: center;
 }
 
+/* Botão Roxo (Conhecer a Empresa) */
 .btn-primary {
-    background: var(--accent-purple);
-    color: #fff;
+    background-color: #6e56cf !important; /* Cor roxa original */
+    color: #ffffff !important;
     border: none;
     box-shadow: 0 4px 15px rgba(110, 86, 207, 0.3);
 }
 
 .btn-primary:hover {
-    background: #5a44b5;
+    background-color: #5a44b5 !important;
     transform: translateY(-2px);
 }
 
+/* Botão Preto/Transparente (Ver Demonstração) */
 .btn-secondary {
-    background: transparent;
-    color: var(--text-main);
-    border: 1px solid var(--border-color);
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important; /* Borda sutil */
 }
 
 .btn-secondary:hover {
-    background: var(--bg-card);
-    border-color: var(--text-muted);
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: #ffffff !important;
+}
+
+/* ... mantenha suas classes .btn-primary e .btn-secondary como estão ... */
+
+/* Ajuste específico para o Celular */
+@media (max-width: 768px) {
+    .hero-btns, 
+    .hero-buttons {
+        flex-direction: column; /* Empilha no celular */
+        gap: 12px;
+    }
+
+    .btn {
+        width: 100%;           /* Botão largo no celular para facilitar o toque */
+        justify-content: center;
+    }
+}
+
+/* No Celular, os botões ficam um embaixo do outro para facilitar o clique */
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .hero-buttons a, 
+    .hero-buttons button {
+        width: 100%; /* Botões ocupam a largura total no celular */
+    }
 }
 
 /* Visual à direita */
@@ -98,13 +145,7 @@
     flex: 0.8;
     display: flex;
     justify-content: center;
-}
-
-.floating-img {
-    width: 100%;
-    max-width: 500px;
-    filter: drop-shadow(0 0 30px rgba(110, 86, 207, 0.2));
-    animation: float 6s ease-in-out infinite;
+    background: transparent;
 }
 
 @keyframes float {
@@ -134,10 +175,14 @@
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Divide o hero em duas colunas */
-    gap: 50px;
-    align-items: center;
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente se houver altura definida */
+    text-align: center;      /* Garante que o texto interno também fique centralizado */
+    max-width: 900px;        /* Limita a largura para o texto não ficar esticado demais */
+    margin: 0 auto;          /* Centraliza o bloco todo na página */
+    padding: 100px 20px;     /* Espaçamento interno */
 }
 
 /* Centraliza a imagem na coluna da direita */
@@ -147,24 +192,3 @@
     align-items: center;
 }
 
-/* Estilização e Animação da Imagem Existing class */
-.floating-img {
-    width: 400px; /* Tamanho da logo flutuante no hero */
-    height: auto;
-    
-    /* 1. Visibilidade: Inverte a cor da logo preta para branco/cinza claro */
-    filter: invert(1) brightness(1.2); 
-    
-    /* 2. Animação: Flutuação suave */
-    animation: floatAnimation 6s ease-in-out infinite;
-}
-
-/* Definição da Animação de Flutuação */
-@keyframes floatAnimation {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px); /* Sobe 20px no meio da animação */
-    }
-}
